@@ -6,9 +6,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-
+  <header>
+    <ul class= "a-main-header__homepage">
+      <li class="text"><p>Rainforest: A Product Selling Platform<p></li>
+      <li class="icon"><i class="fa fa-user-o" aria-hidden="true" fa-5x></i></li>
+    </ul>
+  </header>
   <body>
     <%= yield %>
   </body>
+  <div class = "footer">
+    <p>Post a Product, Leave a Review<p>
+  </div>
 </html>
