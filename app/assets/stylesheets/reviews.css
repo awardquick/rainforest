@@ -2,3 +2,19 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+.new_review {
+  text-align: center;
+}
+
+h1 {
+  color:black;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.video_ad {
+  padding-left: 10px;
+  position: relative;
+  top: 5em;
+}

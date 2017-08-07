@@ -16,12 +16,15 @@
 
 <h3>Reviews</h3>
 <% @product.reviews.each do |review| %>
+
+<div class="review_comment">
   <p>
     <%= review.comment %>
     <br>
     Added on: <%= review.created_at %>
   </p>
 <% end %>
+</div>
 
   <h3>New Review</h3>
 <%= render 'reviews/form', review: @review %>
