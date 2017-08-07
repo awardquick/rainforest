@@ -2,3 +2,27 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+.text {
+  color:white;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.footer {
+  color:white;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.new_product  {
+  text-align: center;
+}
+
+.apple_watch {
+  width:200px;
+  display: inline-block;
+
+}
