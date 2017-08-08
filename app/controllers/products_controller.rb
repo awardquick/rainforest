@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :edit, :update, :destroy]
+  #before_filter :authorize
+  before_action :set_product, only: [:show, :edit, :update, :destroy, :buy]
+
 
   # GET /products
   # GET /products.json
@@ -25,7 +27,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
-    @product = Product.new(product_params)
+    @product = current_user.products.build(product_params)
 
     respond_to do |format|
       if @product.save
@@ -60,6 +62,15 @@ class ProductsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def buy
+    @purchase = current_user.purchased_products.build(product: @product)
+    if @purchase.save
+
+    else
+       
     end
   end
 
