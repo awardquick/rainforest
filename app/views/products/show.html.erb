@@ -16,7 +16,7 @@
 <%= @product.formatted_price %>
 </p>
 
-<h3>Reviews</h3>
+<h3>Comments</h3>
 <% @product.reviews.each do |review| %>
 
 <div class="review_comment">
@@ -28,7 +28,7 @@
 <% end %>
 </div>
 
-  <h3>New Review</h3>
+  <h3>New Comment</h3>
 <%= render 'reviews/form', review: @review %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
