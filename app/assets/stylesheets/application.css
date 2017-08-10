@@ -45,7 +45,7 @@ body  {
        url("/assets/rainforest.jpg");
      list-style-type: none;
      margin: 0;
-     padding bottom: 10px;
+     padding-bottom: 10px;
      display: flex;
      height:120px;
   }
