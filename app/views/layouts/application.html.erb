@@ -23,7 +23,7 @@
         <%= submit_tag "Login" %>
         <% end %>
         <% if current_user %>
-       Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+       Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %> | <%= link_to "Cart", '/cart' %> | <%= link_to "Listings", '/products'%> | <%= link_to "Comments", '/reviews'%>
         <% else %>
           <%= link_to 'Signup', '/signup' %>
         <% end %>

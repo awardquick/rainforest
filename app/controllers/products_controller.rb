@@ -68,12 +68,29 @@ class ProductsController < ApplicationController
   def buy
     @purchase = current_user.purchased_products.build(product: @product)
     if @purchase.save
-
+      redirect_to @product, notice: 'Product was successfully purchased.'
     else
-
+      redirect_back(fallback_location: root_path)
     end
   end
 
+  def cart
+    @products = []
+    @total = 0;
+    @purchases = current_user.purchased_products
+    @purchases.each do |purchase|
+      @products << Product.find(purchase.product_id)
+    end
+  end
+
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_product
+      @product = Product.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
