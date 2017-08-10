@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainforest</title>
+    <title>WebZoo</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,25 +12,33 @@
     <div id= "header">
       <header>
         <ul class= "a-main-header__homepage">
-          <li class="text"><p>Rainforest: A Product Selling Platform</p></li>
+          <li class="text"><p>WebZoo: One stop shop for your exotic animal needs!</p></li>
           <li class="icon"><i class="fa fa-user-o" aria-hidden="true" fa-5x></i></li>
         </ul>
+        <div class="signin">
+        <p>Hello. Sign in</p>
+        <%= form_tag '/login' do %>
+        <i class="fa fa-envelope" aria-hidden="true"></i> Email <%= text_field_tag :email %>
+        <i class="fa fa-key" aria-hidden="true"></i>Password <%= password_field_tag :password %>
+        <%= submit_tag "Login" %>
+        <% end %>
+        <% if current_user %>
+       Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+        <% else %>
+          <%= link_to 'Signup', '/signup' %>
+        <% end %>
+        <div class="homebutton">
+        <a href="http://localhost:3000/"><i class="fa fa-home fa-2x"></i></a>
+        </div
       </header>
-    </div>
-    <% if current_user %>
-      Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
-    <% else %>
-      <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
-    <% end %>
 
-    <div id="body">
+  </div>
       <body>
         <%= yield %>
       </body>
     </div>
     <div id="footer">
       <div class = "footer">
-        <p>Post a Product, Leave a Review<p>
       </div>
     </div>
   </div>

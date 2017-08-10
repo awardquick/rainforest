@@ -70,7 +70,7 @@ class ProductsController < ApplicationController
     if @purchase.save
 
     else
-       
+
     end
   end
 

@@ -18,8 +18,10 @@ body  {
     margin: 0;
     height: 100%;
     padding: 0;
+    background-color: rgb(230,230,230);
+    margin: 0;
+}
 
-  }
 #container  {
   min-height: 100%;
   position:relative;
@@ -27,8 +29,13 @@ body  {
 
 
 
-#body {
-  padding-bottom:50px;
+#header_ad {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid white;
+  height:70px;
+  width: 100%;
+  position:relative;
+  bottom: 50px;
 }
 
 .a-main-header__homepage {
@@ -38,16 +45,18 @@ body  {
        url("/assets/rainforest.jpg");
      list-style-type: none;
      margin: 0;
-     padding: 0;
-     background-color: green;
+     padding bottom: 10px;
      display: flex;
-     align-items: baseline;
+     height:120px;
   }
 
 .text {
     margin-left: 15px;
   }
 
+.a-main-header__homepage {
+    text-align: center;
+}
 .icon  {
      margin-left: auto;
      margin-right: 20px;
@@ -63,6 +72,29 @@ table {
 
   }
 
+.photos {
+  width: 300px;
+  border: 25px solid white;
+  padding: 25px;
+  margin: 25px;
+  display:inline-table;
+  box-shadow: 10px 10px 5px #888888;
+
+}
+.signin a {
+   color: white;
+   position: absolute;
+   left: 0em;
+}
+
+a:hover {
+     color:#00A0C6;
+     text-decoration:none;
+     cursor:pointer;
+}
+#app_promotion_banner {
+
+}
 .footer {
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -71,10 +103,24 @@ table {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:50px;
+    bottom:0;
+    height:60px;
     width:100%;
+    position:fixed;
+}
 
-  }
+.signin {
+  position:absolute;
+  top: 0em;
+  left: 70em;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+.homebutton {
+  position: relative;
+  left: 380px;
+  width: 16px;
+  bottom: 18px;
+}

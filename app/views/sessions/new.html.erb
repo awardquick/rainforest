@@ -1,9 +1,18 @@
-<h1>Login</h1>
+<!DOCTYPE html>
+<html>
+  <head>
 
-<%= form_tag '/login' do %>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  </body>
+  <div class="wrapper">
+    <%@products.each do |product| %>
+    <div class="photo_products">
+      <%= link_to(image_tag(product.image.url), product) %>
+    </div>
+    <%end%>
+    </body>
+  </body>
 
-  Email: <%= text_field_tag :email %>
-  Password: <%= password_field_tag :password %>
-  <%= submit_tag "Submit" %>
-
-<% end %>
+</html>

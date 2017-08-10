@@ -78,3 +78,32 @@ div.actions {
 label {
   display: block;
 }
+
+.photo_products {
+  border: 1px solid white;
+  width:400px;
+  max-height: 500px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.photo_products img {
+  width: 402px;
+  height: 330px;
+  position: relative;
+
+}
+.wrapper {
+  display: flex;
+  height:auto;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+body, html {
+    height:  100%;
+    margin:  0px auto;
+    padding: 0px auto;
+}

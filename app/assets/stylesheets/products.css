@@ -2,12 +2,143 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+#container {
+  padding-bottom: 20px;
+}
 
+.pricebox {
+    padding-top: 80px;
+    padding-right: 20px;
+}
+
+.left-pad-top-bottom {
+    background-color: white;
+    width: 950px;
+    height: 150px;
+
+}
+
+.left.pad-top-bottom.text-shadow-none p {
+  text-align: center;
+
+}
+
+
+.text-shadow-none {
+    text-shadow: none;
+    font-family:Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+.box-sidebar .header {
+
+   padding: 10px;
+   background: #f9f9f9;
+   border-bottom: 2px solid #d8d8d8;
+   border-top-right-radius: 6px;
+   border-top-left-radius: 6px;
+   font-weight: 700;
+   margin-top: 85px;
+}
+.text-center{
+  text-align: center;
+}
+.right{
+  float:right;
+}
+.box-sidebar {
+    height:289px;
+    width: 288px;
+    background-color: white;)
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: inset 0 -2px 0 0 #d8d8d8;
+    text-align: center;
+    color: rgb(111,111,111);
+    font-size: 16px;
+    font-family: Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+}
+.color-branch{
+  font-size: 24px;
+  font-style: oblique;
+}
+
+.box-main-alt{
+  background-color: #ffff;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-top: 35px;
+}
+
+.size-large-xx{
+  font-size: 24px;
+  font-style: oblique;
+}
+div {
+    display: block;
+    line-height: 1.5em;
+}
+
+.productimage {
+  width:620;
+  height:465;
+}
+
+.productreviews{
+  font-size:12px;
+  line-height:1.0;
+}
+
+.productname {
+  padding-top: 5px;
+  color:black;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Sedgwick Ave Display', cursive;
+  text-align: center;
+  text-emphasis-style: sesame;
+
+}
+
+.productdescription {
+
+  font-size: 16px;
+}
+textarea{
+  width:80%;
+  height:100px;
+}
+img#productpage {
+  height: 465px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float:left;
+}
 .text {
   color:white;
   font-size: 30px;
   font-style: italic;
   font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.container  {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1123px;
+}
+.clearfix {
+  display: block;
+}
+.new_product  {
+  text-align: center;
+}
+
+.left {
+  float: left;
 }
 
 .footer {
@@ -17,12 +148,42 @@
   font-family: 'Sedgwick Ave Display', cursive;
 }
 
-.new_product  {
-  text-align: center;
+#body h1 {
+  margin-top: 40px;
 }
 
-.apple_watch {
-  width:200px;
-  display: inline-block;
+.applicationtext {
+  font-size: 16px;
+  font-family: Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+  margin-top: 20px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  color:black;
 
+}
+
+.wrapper {
+  display:inline-block;
+  margin-bottom: 60px;
+}
+
+table {
+  margin-top: 50px;
+}
+
+.header_ad h1 {
+  margin-top: 150px;
+
+}
+
+.productcount {
+  margin-top: 60px;
+}
+
+table, th, td {
+   border: 1px solid black;
+   max-width: 950px;
+}
+
+.new_product{
+   margin-bottom: 40px;
 }

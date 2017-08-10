@@ -1,35 +1,76 @@
-<p id="notice"><%= notice %></p>
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-<p>
-  <%= image_tag @product.image.url %>
-</p>
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-<strong>Price:</strong>
-<%= @product.formatted_price %>
-</p>
-
-<h3>Reviews</h3>
-<% @product.reviews.each do |review| %>
-
-<div class="review_comment">
-  <p>
-    <%= review.comment %>
-    <br>
-    Added on: <%= review.created_at %>
-  </p>
-<% end %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <div class="container clearfix">
+    <div id="Wrapper"
+    <div id="app_promotion_banner" class="box-trans-white pad-top-bottom" style="border-bottom:1px solid #ffffff;"
+                    <div class="container clearfix">
+                    <div class="left pad-top-bottom text-shadow-none"><div>
+                    </div>
+                    </div>
+                    </div>
+    </div>
+    </div>
+  </head>
+  <div id="header_ad">
+    <div class="applicationtext"<p> WebZoo is the simplest way to buy and sell invasive and exotic animals. Look for the free app coming soon!!</p></div>
+    <div class="right">
+        <ul class="horizontal space-none type-none text-center">
+        </ul>
+  </div>
 </div>
+  <body>
+    <div class="container clearfix" style="margin-top:20px;">
+      <div class="right text-center">
+        <div class="box-sidebar">
+                          <div class="header">ASKING PRICE </div>
+                          <div class="pricebox">
+                              <sup style="font-size:1.5em" class="color-branch">$</sup>
+                              <span class="size-large-xx color-gray-darker medium"><%= @product.formatted_price %></span>
+                            </div>
+                          </div>
+                        </div>
+      <div class="text-center size-medium pad-more-left-right">
+        </div>
+      </div>
+    <div class="left" style="width:620px;">
+      <div class="box-main-alt">
+        <div class="productimage">
+          <%= image_tag(@product.image.url, id:"productpage")%>
+        </div>
 
-  <h3>New Review</h3>
-<%= render 'reviews/form', review: @review %>
+        <div class="left base-size medium color-gray-darker" style="width: 80%"></div>
+      </div>
+      <div class="productname">
+        <p><%= @product.name %></p>
+      </div>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+      <div class="productdescription">
+              <strong> Description:</strong>
+        <p> <%= @product.description %></p>
+      </div>
+
+      <div class="productreviews">
+          <h3>Reviews</h3>
+          <% @product.reviews.each do |review| %>
+          <p>
+            <%= review.comment %>
+          <br>
+            Added on: <%= review.created_at %>
+          </p>
+          <% end %>
+        </div>
+      <div class="wrapper">
+        <div class="newreview">
+          <h3>New Review</h3>
+          <%= render 'reviews/form', review: @review %>
+          <%= link_to 'Edit', edit_product_path(@product) %> |
+          <%= link_to 'Back', products_path %></strong>
+          <p id="notice"><%= notice %></p>
+         </div>
+      </div>
+    </div>
+  </body>
+</html>
