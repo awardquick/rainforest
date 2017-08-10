@@ -84,7 +84,6 @@ class ProductsController < ApplicationController
   end
 
 
-<<<<<<< HEAD
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
@@ -92,8 +91,6 @@ class ProductsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-=======
->>>>>>> 1a73b9f65b04c02133fdc57c80ac5cecab309bc2
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product

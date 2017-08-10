@@ -23,16 +23,20 @@
         <%= submit_tag "Login" %>
         <% end %>
         <% if current_user %>
+<<<<<<< HEAD
        Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %> | <%= link_to "Cart", '/cart' %> | <%= link_to "Listings", '/products'%> | <%= link_to "Comments", '/reviews'%>
+=======
+           Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %> | <%= link_to "Cart", '/cart' %> | <%= link_to "Listings", '/products'%> | <%= link_to "Comments", '/reviews'%>
+>>>>>>> 1a73b9f65b04c02133fdc57c80ac5cecab309bc2
         <% else %>
           <%= link_to 'Signup', '/signup' %>
         <% end %>
         <div class="homebutton">
         <a href="http://localhost:3000/"><i class="fa fa-home fa-2x"></i></a>
         </div
-      </header>
-
-  </div>
+          </header>
+          
+ </div>
       <body>
         <%= yield %>
       </body>
