@@ -17,26 +17,7 @@
     </tr>
   </thead>
   <tbody>
-<<<<<<< HEAD
-     <% @products.each do |product| %>
-       <%if !current_user.products.map(&:id).include?(product.id)%>
-         <%if !current_user.purchased_products.map(&:product_id).include?(product.id)%>
-       <tr>
-         <td><%= product.name %></td>
-         <td><%= product.description %></td>
-         <td><%= product.formatted_price %></td>
-         <td><%= link_to 'Show', product %></td>
-         <td><%= link_to 'Edit', edit_product_path(product) %></td>
-     <!--<td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
-         <td><%= link_to 'Buy', "/products/#{product.id}/buy" %></td>
-         <td><%= image_tag(product.image.url, width:100)%>
-       </tr>
-         <%end%>
-       <%end%>
-=======
-    <% @products.each do |product| %>
-      <%if !current_user.products.map(&:id).include?(product.id)%>
-        <%if !current_user.purchased_products.map(&:product_id).include?(product.id)%>
+      <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
@@ -48,9 +29,6 @@
         <td><%= image_tag(product.image.url, width:100)%>
       </tr>
         <%end%>
-      <%end%>
->>>>>>> 1a73b9f65b04c02133fdc57c80ac5cecab309bc2
-    <% end %>
     </tbody>
   </table>
 </div>
