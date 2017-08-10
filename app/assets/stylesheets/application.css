@@ -39,7 +39,7 @@ body  {
 }
 
 .a-main-header__homepage {
-     background-image: url("/assets/rainforest.jpg");
+     background-image: url(rainforest);
      list-style-type: none;
      margin: 0;
      padding-bottom: 10px;
