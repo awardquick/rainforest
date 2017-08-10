@@ -17,9 +17,13 @@
         <td><%= review.comment %></td>
         <td><%= review.product.name %></td>
         <td><%= link_to 'Show', review %></td>
+        <% if can? :edit, @review %>
         <td><%= link_to 'Edit', edit_review_path(review) %></td>
+        <% if can? :edit, @review %>
         <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+    <% end %>
+    <% end %>
     <% end %>
   </tbody>
 </table>
