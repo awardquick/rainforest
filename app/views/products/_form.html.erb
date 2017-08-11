@@ -13,11 +13,6 @@
 
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :product_name %>
-  </div>
-
-  <div class="field">
     <%= form.label :description %>
     <%= form.text_area :description, id: :product_description %>
   </div>
@@ -32,6 +27,7 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= f.submit 'Make a product' %>
+    <%= link_to 'Nevermind', product_path, class: 'button' %>
   </div>
 <% end %>
