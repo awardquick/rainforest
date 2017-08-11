@@ -24,7 +24,7 @@
         <td><%= product.formatted_price %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Buy', "/products/#{product.id}/buy" %></td>
-        <td><%= image_tag(product.image.url, width:100)%>
+        <td><%= image_tag(product.image.https://s3.console.aws.amazon.com/s3/buckets/webzooheroku/?region=us-east-2&tab=overview, width:100)%>
         <%if !current_user.products.map(&:id).include?(product.id)%>
         <%if !current_user.purchased_products.map(&:product_id).include?(product.id)%>
         <% if can? :edit, @product %>
